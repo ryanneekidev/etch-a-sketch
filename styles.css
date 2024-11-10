@@ -1,0 +1,28 @@
+body{
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.rootContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pixelsContainer{
+    display: flex;
+    width: 512px;
+    height: 512px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.pixel::before{
+    content: "\00a0";
+}
+
+.pixel{
+    background-color: white;
+}
