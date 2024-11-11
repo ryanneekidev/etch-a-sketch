@@ -2,8 +2,11 @@
 image: alpine:latest
 
 pages:
+    stage: deploy
+    script:
+        - mkdir .public
     artifacts:
         paths:
             - public
-        only:
-            - main 
+    only:
+        - main 
